@@ -1,0 +1,83 @@
+## Configuration for the GA. Based on the following configuration,
+## you can adjust the algorithm.
+
+# ------------------------------------
+# EXPERIMENT
+## The number of runs we will performe in the GA
+
+RUNS_NUMBER = 30
+
+
+# ------------------------------------
+## Maximum Iterations (MAX_ITERATIONS) per RUN
+
+MAX_ITERATIONS = 50
+
+
+# ------------------------------------
+## Population size (POPULATION)
+
+POPULATION = 40
+
+# ------------------------------------
+## Gene per individual (GENES)
+
+GENES = 20
+
+
+# ------------------------------------
+## Selection Method
+## 0 -> Roulette Selection
+## 1 -> Tournamente Selection
+## 2 -> Universal Stochastic Selection
+## 3 -> Selection by Truncation
+####
+
+SELECTION = 0
+
+## En caso de seleccionar el operador del examen:
+## defina el porcentaje de individuos que guardaremos
+
+SELECTION_RATE = 0.25
+
+
+## In case of Tournamente Selection
+## Number of Individuals in the Tournamente
+
+TOURNAMENT_INDIVIDUALS = 4
+
+# In case of selecting 'selectionByTruncation'.
+# The population rate we will take to perform the selection.
+
+TRUNCATION_RATE = 0.25
+
+# ------------------------------------
+## Crossover Method
+## 0 -> Two Points Crossover
+## 1 -> Uniform Crossover
+## 2 -> Random Mask Crossover
+###
+
+CROSSOVER = 0
+
+# ------------------------------------
+## The Crossover Probability, with which we will use
+## to determine which element to take from each parent.
+
+CROSSOVER_PROBABILITY = 0.7
+
+# ------------------------------------
+## Mutation Method
+## 0 -> Flip Bits
+## 1 -> Triple Gen Mutation
+## 2 -> Rearrange Mutation (My operator)
+###
+
+MUTATION = 1
+
+# ------------------------------------
+## Mutation Probability
+##
+
+MUTATION_PROBABOLITY = 0.1
+
